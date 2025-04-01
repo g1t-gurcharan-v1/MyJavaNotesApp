@@ -1,0 +1,66 @@
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+############################################ From ChatGPT ################################################
+
+# Ignore IntelliJ IDEA project files
+.idea/
+*.iml
+
+# Ignore compiled Java files
+*.class
+
+# Ignore JAR, WAR, and EAR files
+*.jar
+*.war
+*.ear
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore OS-specific files
+Thumbs.db
+
+# Ignore build directories
+/out/
+/target/
+build/
+
+# Ignore dependency caches
+.gradle/
+/mvn/
+/node_modules/
+
+# Ignore generated files
+*.generated
+
+# Ignore Git-related files
+.git/

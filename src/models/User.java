@@ -35,4 +35,17 @@ public class User {
             System.out.println(note);
         }
     }
+
+    // Display all notes
+    public void displayNotes() {
+        if (notes.isEmpty()) {
+            System.out.println(username + " has no notes.");
+        } else {
+            System.out.println(username + "'s Notes:");
+            for (Note note : notes) {
+                System.out.println(note);
+                System.out.println("-------------------");
+            }
+        }
+    }
 }

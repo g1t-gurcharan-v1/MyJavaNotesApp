@@ -12,11 +12,12 @@ public class TestStorage {
         user.addNote("Workout Plan", "Cardio and strength training", "Health");
 
         // Save to file
-        Storage.saveUser(user);
+        Storage.saveNotes( user.getNotes());
         System.out.println("Notes saved successfully!");
 
         // Load from file
-        User loadedUser = Storage.loadUser();
+        User loadedUser = new User("LoadedUser");
+        loadedUser.getNotes().addAll(Storage.loadNotes());
         if (loadedUser != null) {
             System.out.println("Loaded User: " + loadedUser.getUsername());
             loadedUser.displayNotes();

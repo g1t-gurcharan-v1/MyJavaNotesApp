@@ -28,13 +28,12 @@ public class NoteService {
 
     // Save notes to file
     public void saveNotesToStorage() {
-        Storage.saveUser(user);
+        Storage.saveNotes(user.getNotes());
     }
 
     // Load notes from file
     public void loadNotesFromStorage() {
-        User loadedUser = Storage.loadUser();
-        List<Note> loadedNotes = loadedUser != null ? loadedUser.getNotes() : List.of();
+        List<Note> loadedNotes = Storage.loadNotes();
         for (Note note : loadedNotes) {
             user.addNote(note.getTitle(), note.getThought(), note.getCategory());
         }

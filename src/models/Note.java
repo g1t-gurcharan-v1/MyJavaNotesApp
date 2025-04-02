@@ -1,19 +1,15 @@
 package models;
 
-import java.util.Date;
-
 public class Note {
 
     private String title;
     private String thought;
-    private Date date;
     private String category;
 
 
-    public Note(String title, String thought, Date date, String category) {
+    public Note(String title, String thought, String category) {
         this.title = title;
         this.thought = thought;
-        this.date = date;
         this.category = category;
     }
 
@@ -33,14 +29,6 @@ public class Note {
         this.thought = thought;
     }
 
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
-
     public String getCategory() {
         return category;
     }
@@ -51,6 +39,6 @@ public class Note {
 
     @Override
     public String toString() {
-        return "Title: " + title + "\nThought: " + thought + "\nDate: " + date + "\nCategory: " + category;
+        return "Title: " + title + "\nThought: " + thought + "\nCategory: " + category;
     }
 }

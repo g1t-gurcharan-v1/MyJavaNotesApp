@@ -15,7 +15,7 @@ public class User {
 
     // Method to add a Note to the User's list
     public void addNote(String title, String thought, String category) {
-        Note note = new Note(title, thought, new java.util.Date(), category);
+        Note note = new Note(title, thought, category);
         this.notes.add(note);
     }
 

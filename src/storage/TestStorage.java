@@ -1,7 +1,6 @@
 package storage;
 
 import models.User;
-import models.Note;
 
 public class TestStorage {
     public static void main(String[] args) {

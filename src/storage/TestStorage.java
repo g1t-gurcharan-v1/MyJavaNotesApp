@@ -8,8 +8,8 @@ public class TestStorage {
         User user = new User("Alice");
 
         // Add some notes
-        user.addNote("Java Basics", "Classes and objects explained", "Programming");
-        user.addNote("Workout Plan", "Cardio and strength training", "Health");
+        user.addNote("Motivation", "I didn't fail the test. I just found 100 ways to do it wrong. — Benjamin Franklin", "Personal");
+        user.addNote("Inspiration", "Strength does not come from winning. Your struggles develop your strengths. — Arnold Schwarzenegger ", "Health");
 
         // Save to file
         Storage.saveNotes( user.getNotes());

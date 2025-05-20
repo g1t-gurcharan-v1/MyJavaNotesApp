@@ -141,7 +141,7 @@ public class NoteTakingAppSwing extends JFrame {
 
         if (!title.isEmpty() && !thought.isEmpty()) {
             Note note = new Note(title, category, thought);
-            noteService.addNote(note.getTitle(), note.getThought(), note.getCategory()); // Store the note
+            noteService.addNote(note.getTitle(), note.getCategory(), note.getThought()); // Store the note
             refreshNotes(); // Refresh the display
             clearFields(); // Clear input fields
         } else {
